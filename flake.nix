@@ -20,6 +20,7 @@
       rec {
         packages = {
           nodejs = nixpkgs-24-05.nodejs_22;
+          ts-node = nixpkgs-24-05.nodePackages.ts-node;
           deno = nixpkgs-unstable.deno;
           bun = nixpkgs-24-05.bun;
           typescript = nixpkgs-24-05.typescript;
@@ -28,6 +29,7 @@
           name = "bun-deno-node-playground";
           buildInputs = with packages; [
             nodejs
+            ts-node
             deno
             bun
             typescript
