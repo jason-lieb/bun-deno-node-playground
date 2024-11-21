@@ -1,6 +1,7 @@
 {
   "name": "node-playground",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "script": "ts-node index.ts"
   },
